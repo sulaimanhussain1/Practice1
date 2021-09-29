@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Fragment () </title>
+</head>
+<body>
+    <div id="my-id">
+        <h1>We are learning JS.</h1>
+        <p>DocumentFragment();</p>
+    </div>
+
+    <script>
+        
+        // create empty document fragment 
+        var df = document.createDocumentFragment();
+
+        // creating h3 element 
+        var hNode = document.createElement("h3");
+
+        // creating p element
+        var pNode = document.createElement("p");
+
+        // text for h3 and p element 
+        hNode.textContent = "h3 Created by JS."
+        pNode.textContent = "para Created by JS."
+
+        // appending elements 
+        df.appendChild(hNode);
+        df.appendChild(pNode);
+
+        // appending document fragment 
+        var targetNode = document.getElementById("my-id");
+        targetNode.appendChild(df);
+
+        console.log(targetNode);
+
+    </script>
+</body>
+</html>

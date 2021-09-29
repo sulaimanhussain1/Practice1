@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCE JAVASCRIPT TREE</title>
+</head>
+<body>
+    
+    <p>Get Element By Tag Name .. getElementByTagName()</p>
+
+    <h1>We Are learning Advance Javascript.</h1>
+    <h2>DOM.</h2>
+     <p>HELLO WORLD</p>
+     <p>JAVASCRIPT</p>
+     <div>
+         <p>1st para in div.</p>
+         <p>2nd para in div.</p>
+     </div>
+
+    <script>
+      var result =  document.getElementsByTagName("p");
+      document.write(result);
+      console.log (result);
+
+      // lenght property
+       
+      document.write("<br><br>")
+      document.write("Length Property.<br>")
+
+      var len = result.length;
+      document.write(len);
+      console.log(len);
+
+      // loop 
+
+      document.write("<br><br>LOOP <br>");
+      for (let i =0; i < len ; i++){
+          var show = document.getElementsByTagName("p")[i];
+          document.write(show  + "<br>");
+          console.log (show);
+      }
+    </script>
+
+</body>
+</html>

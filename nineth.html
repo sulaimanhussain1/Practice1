@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstChild And FirstElementChild</title>
+</head>
+<body>
+
+    <p> FirstChild() And FirstElementChild() </p>
+    <h1 id="my-id">
+        <!-- This is comment. -->
+        <span>We are learning JS.</span>
+        <em>Hello JS</em>
+    </h1>
+    <p id="my-id1"> This is paragraph.</p>
+    <p id="my-id2"> 
+        <!-- I am Comment.  -->
+        This is paragraph 2 .
+    </p>
+     
+    <script>
+        
+        // firsChild  and firstElementChild
+        
+        var result = document.getElementById("my-id");
+        console.log(result.firstChild);
+        console.log(result.firstElementChild);
+
+        // lastChild and lastElementChild
+
+        // var show = document.getElementById("my-id2");
+        console.log(result.lastChild);
+        console.log(result.lastElementChild);
+    </script>
+
+
+</body>
+</html>

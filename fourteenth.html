@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to append element node.</title>
+</head>
+<body>
+    
+    <div id="my-id">
+        <h1>We are learning JS.</h1>
+        <p>Append element.</p>
+    </div>
+
+    <script>
+
+        // creating element 
+
+        var nEnode = document.createElement("h2");
+
+        // creating text node 
+
+        var nTnode = document.createTextNode("Text created by JS.");
+
+        // creating comment 
+
+        var nCnode = document.createComment("comment created by JS.");
+
+        // Append text in element
+        
+        nEnode.appendChild(nTnode);
+
+        // Append comment in element 
+
+        nEnode.appendChild(nCnode);
+
+        var targetNode = document.getElementById("my-id");
+        targetNode.appendChild(nEnode);
+        console.log(targetNode);
+
+    </script>
+
+</body>
+</html>

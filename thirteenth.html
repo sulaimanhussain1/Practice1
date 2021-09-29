@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appending Text and Comment.</title>
+</head>
+<body>
+
+    <div id="my-id">
+        <h1>We are learning JS.</h1>
+        <h1>Appending Text and Comment.</h1>
+    </div>
+    
+
+    <script>
+
+        var result = document.getElementById("my-id");
+
+        // creating a new text and comment 
+
+        var nT = document.createTextNode("text created by js.");
+        var nC = document.createComment("Comment created by js.");
+
+        result.appendChild(nT);
+        result.appendChild(nC);
+
+        console.log(result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Nodes..</title>
+</head>
+<body>
+    
+    <div id="my-id">
+        <h1>
+            We are learning javascript.
+        </h1>
+        <p>Creating Node 
+            <ul>
+                <li>Create Element </li>
+                <li>Create Comment</li>
+                <li>Create Text</li>
+            </ul>
+        </p>
+    </div>
+
+    <script>
+      
+      // CREATE NODES 
+
+      // creating a new element 
+
+      var nENode = document.createElement("h2");
+      console.log(nENode);
+
+      // creating a new textnode
+
+      var nTnode = document.createTextNode("Text created by javascript.");
+      console.log(nTnode);
+
+      // creating a new comment 
+
+      var nCNode = document.createComment("I am Comment.");
+      console.log(nCNode);
+      
+      </script>
+
+</body>
+</html>

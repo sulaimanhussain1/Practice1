@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insertElementAdjacent.</title>
+</head>
+<body>
+    
+    <div id="first">
+        <h1 id="myid1">Heading One</h1>
+        <h2 id="myid2">Heading Two</h2>
+        <h3 id="myid3">Heading Three</h3>
+    </div>
+
+    <script>
+
+       // targetElement.insertAdjacentElement("position" , element);
+       // POSITION : beforebegin | afterbegin | beforend | afteend
+
+       var target = document.getElementById("first");
+       var h = document.getElementById("myid2");
+       var newElement = document.createElement("span");
+       newElement.textContent = "This is span tag.";
+
+       h.insertAdjacentElement("afterbegin" , newElement); 
+    //    h.insertAdjacentElement("afterbegin" , newElement);       
+    //    h.insertAdjacentElement("afterbegin" , newElement); 
+       h.insertAdjacentElement("afterend" , newElement);
+    
+       console.log(target);
+    </script>
+</body>
+</html>

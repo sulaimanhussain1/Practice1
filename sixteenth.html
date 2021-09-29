@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORMALIZED...</title>
+</head>
+<body>
+    
+    <div id="my-id">
+        <h1>We are learning JS.</h1>
+        <p>this is NORMALIZED Method.</p>
+    </div>
+
+    <script>
+
+        // Normalized Method..
+
+        var targetNode = document.getElementById("my-id");
+
+        // create text node 
+
+        targetNode.appendChild(document.createTextNode("HELLO1!"));
+
+        // create text node 
+ 
+        targetNode.appendChild(document.createTextNode("My name is "));
+
+        // create text node 
+
+        targetNode.appendChild(document.createTextNode("Sulaiman"));
+     
+        targetNode.normalize();
+
+     console.log(targetNode);
+    </script>
+</body>
+</html>

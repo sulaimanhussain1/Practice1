@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>previous and next siblings.</title>
+</head>
+<body>
+    <p> previousSibling and previousElementSibling , nextSibling and nextElementSibling  </p>
+    <h1 id="my-id">
+        <!-- This is comment. -->
+        <span>We are learning JS.</span>
+        <em>Hello JS</em> <!--I am comment. -->
+    </h1>
+    <p id="my-id1"> This is paragraph.</p>
+    <p id="my-id2"> 
+        <!-- I am Comment.  -->
+        This is paragraph 2 .
+    </p>
+
+    <script>
+
+        // previousSibling and previousElementSibling
+      
+      var result = document.getElementById("my-id");
+      console.log(result.lastChild.previousSibling);
+      console.log(result.lastChild.previousElementSibling);
+
+      // nextSiblings and nextElementSiblings
+
+      console.log(result.firstChild.nextSibling);
+      console.log(result.firstChild.nextElementSibling);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPENDING ELEMENT...</title>
+</head>
+<body>
+
+    <div id="my-div">
+        <h1>We are learning javascript.</h1>
+        <h1>Appending Element</h1>
+    </div>
+
+    <script>
+
+        // creating a new element h2 
+
+        var nE = document.createElement("h2");
+
+        // Appending element 
+
+        var div = document.getElementById("my-div");
+        div.appendChild(nE);
+        console.log(div);
+    </script>
+    
+</body>
+</html>

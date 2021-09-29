@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="geek">ADVANCE JAVASCRIPT TREE</title>
+</head>
+<body>
+
+    <p>Get Element By Class ..  getElementByClassName()</p>
+    
+    <h1 class="geek">We are learning Advance Javascript.</h1>
+    <h2>Document Object Model</h2>
+    <p class="geek">HELLO WORLD.</p>
+    <p class="hello">JAVASCRIPT..</p>
+    <div id="show">
+        <p class="geek">MORE SPECIFIC.</p>
+        <p>ADVANCE JAVASCRIPT.</p>
+    </div>
+
+    <script>
+    //  var result =   document.body.getElementsByClassName("geek");
+    //  document.write(result);
+    //  console.log (result);
+
+     // more specific 
+
+     var result = document.getElementById("show").getElementsByClassName("geek");
+     document.write(result + "<br><br>");
+     console.log(result);
+
+     // length property
+      
+     document.write("Length Property.<br>");
+
+     var len = result.length;
+     document.write(len);
+     console.log (len);
+
+
+    </script>
+</body>
+</html>
